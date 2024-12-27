@@ -1,4 +1,4 @@
 [[redirects]]
-from = "/*"
-to = "/Index.html"
-status = 200
+from = "/"
+to = "/Inicio"
+status = 301
