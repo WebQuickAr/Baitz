@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="resources/Icono.webp">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="Styles.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/90cba60ba4.js" crossorigin="anonymous"></script>
+  <title>Baitz - La mejor ropa al mejor precio</title>
+  <meta name="description" content="Baitz es tu tienda de ropa en Argentina donde la moda se encuentra con la calidad. Descubrí nuestra colección exclusiva de remeras diseñadas para un estilo auténtico y urbano. Confección local y atención a cada detalle ¡Renová tu estilo con prendas únicas que te definen">
+  <meta name="keywords" content="Ropa urbana Argentina, Tienda de ropa online, Moda casual, Remeras oversize, Ropa para jóvenes, Baitz Argentina, Comprar ropa online, Moda urbana, Remeras de calidad, Estilo urbano, Confección local, Envíos a todo el país">
+</head>
+<body class="body">
+  <!-- ////// HEADER ////// -->
+  <header class="header">
+    <!-- *************** ADBAR *************** -->
+    <div class="swiper-container swiperAdbar swiper1" >
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><p class="slide1-text">Envíos a todo el país &#128640;</p></div>
+        <div class="swiper-slide"><p class="slide1-text">Compra en nuestras redes &#128187;</p></div>
+        <div class="swiper-slide"><p class="slide1-text">Retira en nuestro local &#127968;</p></div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+    <!-- *************** NAV *************** -->
+    <nav class="nav">
+      <!-- LOGO -->
+      <h1 class="logo-name"><a href="Inicio.html">Baitz</a></h1>
+      <!-- MENU HAMBURGUESA -->
+      <button class="nav-btn nav-btn-open"><span class="material-symbols-rounded  nav-btn-icon">menu</span></button>
+      <!-- NAV MODAL -->
+      <div class="nav-modal">
+        <button class="nav-btn nav-btn-close"><span class="material-symbols-rounded nav-btn-icon">close</span></button>
+        <div class="nav-modal-content">
+          <ul class="modal-list-container">
+            <li><a class="modal-item" style="border-bottom: 2px solid var(--color-extra);" href="Inicio.html">Inicio</a></li>
+            <li><a class="modal-item" href="Productos.html">Productos</a></li>
+            <li><a class="modal-item" href="Contacto.html">Contacto</a></li>
+            <li><a class="modal-item" href="Preguntas-Frecuentes.html">FAQs</a></li>
+          </ul>
+          <div class="modal-logo-container">
+            <p class="modal-name">Baitz</p>
+            <img src="resources/Logo_de_Redes.webp" alt="logo"   class="modal-logo">
+          </div>
+        </div>
+      </div>
+      <label class="nav-modal-background"></label>
+    </nav>
+    <!-- WPP BUTTON -->
+    <a href="https://wa.me/5491126289291?text=Hola,%20estoy%20interesado%20en%20una%20de%20las%20remeras." target="_blank" class="whatsapp-button-container">
+      <img class="whatsapp-button-img" src="resources/whatsapp-icon.webp" alt="Logo de WhatsApp"  >
+    </a>
+  </header>
+  <!-- ////// MAIN PAGE ////// -->
+  <main class="main-content-container">
+    <!-- *************** HEADER CARROUSEL *************** -->
+    <div class="swiper-container swiper2 swiperWelcome">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide sliderMobile"><img src="resources/Welcome/DE-welcome.webp" alt="Foto Modelo"  ></div>
+        <div class="swiper-slide sliderMobile"><img src="resources/Welcome/NPNG-welcome.webp" alt="Foto Modelo"></div>
+        <div class="swiper-slide sliderMobile"><img src="resources/Welcome/LA-welcome.webp" alt="Foto Modelo"></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <!-- *************** ÚLTIMOS LANZAMIENTOS *************** -->
+    <section class="ultimos-lanzamientos">
+      <!-- ULTIMO DROP TITLE -->
+      <div class="ultimos-lanzamientos_text-container">
+        <h2 class="ultimos-lanzamientos_title">Últimos Lanzamientos</h2>
+        <p class="ultimos-lanzamientos_text">¡Descubrí las novedades de nuestra colección!</p>
+      </div>
+      <!-- ULTIMO DROP IMG CONTAINER -->
+      <div class="ultimos-lanzamientos_media-container" id="ultimos-lanzamientos-container">
+        
+      </div>
+    </section>
+    <!-- *************** TODOS LOS PRODUCTOS *************** -->
+    <section class="products-section">
+      <!-- TITLE -->
+      <h2 class="products-section_title">Nuestros productos</h2>
+      <!-- PRODUCTOS CONTAINER -->
+      <div class="products-section_products-container" id="productos-inicio">
+        
+      </div>
+      <a href="Productos.html" class="products-section_section-btn">Ver todos los productos</a>
+    </section>
+    <!-- *************** INFO CARROUSEL *************** -->
+    <div class="swiper-container swiper3 swiperInfo" id="swiperInfo">
+      <div class="swiper-wrapper">
+        <!-- INFO 1 -->
+        <div class="swiper-slide">
+          <div class="swiperInfo-contentContainer">
+            <span class="material-symbols-rounded swiperInfo-icon">travel</span>
+            <div class="swiperInfo-textContainer">
+              <p class="swiperInfo-title">Envíos a todo el país</p>
+              <p class="swiperInfo-description">Realizamos <b>envíos</b> mediante <b>Correo Argentino</b> o mensajería de preferencia.</p>
+            </div>
+          </div>
+        </div>
+        <!-- INFO 2 -->
+        <div class="swiper-slide">
+          <div class="swiperInfo-contentContainer">
+            <span class="material-symbols-rounded swiperInfo-icon">shopping_cart</span>
+            <div class="swiperInfo-textContainer">
+              <p class="swiperInfo-title">Método de compra</p>
+              <p class="swiperInfo-description">Hace tu pedido a través de <b>Instagram</b> o <b>WhatsApp</b>.</p>
+            </div>
+          </div>
+        </div>
+        <!-- INFO 3 -->
+        <div class="swiper-slide">
+          <div class="swiperInfo-contentContainer">
+            <span class="material-symbols-rounded swiperInfo-icon">shoppingmode</span>
+            <div class="swiperInfo-textContainer">
+              <p class="swiperInfo-title">Compra al por mayor</p>
+              <p class="swiperInfo-description">Con una compra de <b>2 o más unidades</b> tenes un <b>descuento del 25%</b>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <!-- BANNER INFO -->
+    <div class="bannerInfoContainer" id="bannerInfo">
+      <!-- INFO 1 -->
+        <div class="swiperInfo-contentContainer" data-aos="fade-left">
+          <span class="material-symbols-rounded swiperInfo-icon">travel</span>
+          <div class="swiperInfo-textContainer">
+            <p class="swiperInfo-title">Envíos a todo el país</p>
+            <p class="swiperInfo-description">Realizamos <b>envíos</b> mediante <b>Correo Argentino</b> o mensajería de preferencia.</p>
+          </div>
+        </div>
+      <!-- INFO 2 -->
+        <div class="swiperInfo-contentContainer" data-aos="fade-left">
+          <span class="material-symbols-rounded swiperInfo-icon">shopping_cart</span>
+          <div class="swiperInfo-textContainer">
+            <p class="swiperInfo-title">Método de compra</p>
+            <p class="swiperInfo-description">Hace tu pedido a través de <b>Instagram</b> o <b>WhatsApp</b>.</p>
+          </div>
+        </div>
+      <!-- INFO 3 -->
+        <div class="swiperInfo-contentContainer" data-aos="fade-left">
+          <span class="material-symbols-rounded swiperInfo-icon">shoppingmode</span>
+          <div class="swiperInfo-textContainer">
+            <p class="swiperInfo-title">Compra al por mayor</p>
+            <p class="swiperInfo-description">Con una compra de <b>2 o más unidades</b> tenes un <b>descuento del 25%</b>.</p>
+          </div>
+        </div>
+    </div>
+  </main>
+  
+  <!-- ////// FOOTER SECTION BAITZ ////// -->
+  <div class="footer-section-baitz">
+    <!-- FOLLOW US -->
+    <div class="follow-us">
+      <p class="follow-us-title">Seguinos</p>
+      <div class="follow-us_icon-container">
+        <a href="https://www.instagram.com/baitz.ar/" class="follow-us-link" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@baitz.ok" class="follow-us-link" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+    </div>
+    <!-- CATEGORIES -->
+    <details class="categories">
+      <summary class="categories-title">Categorías<span class="material-symbols-outlined add-categories">add</span></summary>
+      <a href="Inicio.html" class="categories-item">Inicio</a>
+      <a href="Productos.html" class="categories-item">Productos</a>
+      <a href="Contacto.html" class="categories-item">Contacto</a>
+      <a href="Preguntas-Frecuentes.html" class="categories-item">FAQs</a>
+    </details>
+    <!-- CONTACT -->
+    <details class="contact">
+      <summary class="contact-title">Contactanos<span class="material-symbols-outlined add-contact">add</span></summary>
+      <a href="mailto:contacto.baitz@gmail.com" target="_blank" class="contact-item">E-mail: contacto.baitz@gmail.com</a>
+      <a href="https://wa.me/5491126289291?text=Hola,%20estoy%20interesado%20en%20una%20de%20las%20remeras." target="_blank" class="contact-item">Wpp: +5491126289291</a>
+      <a href="https://www.instagram.com/baitz.ar/" target="_blank" class="contact-item">Instagram: @baitz.ar</a>
+    </details>
+  </div>
+  <!-- ////// FOOTER SECTION WEBQUICK ////// -->
+  <footer class="footer-webquick">
+    <div class="footer-text-container">
+      <p class="footer-text">Copyright Baitz | Remeras Oversize - 2024. Todos los derechos reservados.</p>
+    </div>
+    <div class="webquick">
+      <p class="webquick-text">Creado por <a class="webquick-link" href="https://www.instagram.com/webquick.arg/" target="_blank">Webquick</a></p>
+      <img class="webquick-logo" src="resources/LogoWebquick.webp" alt="Logo webquick"  >
+    </div>
+  </footer>
+  <!-- *************** SCRIPTS *************** -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> <!-- js de swipers -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!-- js de animaciones scroll -->
+  <script src="Code.js"></script>
+  <script src="Swiper.js"></script>
+  <script src="DynamicInicio.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>
