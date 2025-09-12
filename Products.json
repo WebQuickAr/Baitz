@@ -1,5 +1,15 @@
 [
   {
+    "nombre": "Demon slayer - infinity castle",
+    "colores": [
+      ["--color-dark", { "imagenes": ["resources/Remeras-2d/DemonSlayer/DS-Tanjiro.webp","resources/Remeras-2d/DemonSlayer/DS-Rengoku.webp","resources/Remeras-2d/DemonSlayer/DS-Akaza.webp","resources/Remeras-2d/DemonSlayer/DS-Tomioka.webp","resources/Remeras-2d/DemonSlayer/DS-Zenitsu.webp"] }]
+    ],
+    "precio_anterior": "12.500",
+    "precio": "10.000",
+    "talles": ["M", "XL"],
+    "tipo": "buzo"
+  },
+  {
     "nombre": "Viltrum Empire",
     "colores": [
       ["--color-light", { "imagenes": ["resources/Buzos-2d/Viltrum-Empire.webp"] }]
@@ -12,7 +22,7 @@
   {
     "nombre": "Plus Ultra",
     "colores": [
-      ["--color-green", { "imagenes": ["resources/Remeras-2d/PU-verde.webp"] }]
+      ["--color-green", { "imagenes": ["resources/Remeras-2d/PlusUltra/PU-verde.webp"] }]
     ],
     "precio_anterior": "10.000",
     "precio": "8.000",
@@ -22,8 +32,8 @@
   {
     "nombre": "AOT - Freedom",
     "colores": [
-      ["--color-green", { "imagenes": ["resources/Remeras-2d/AOT-F-verde-reves.webp", "resources/Remeras-2d/AOT-F-verde-frente.webp"] }],
-      ["--color-dark", { "imagenes": ["resources/Remeras-2d/AOT-F-negro-reves.webp", "resources/Remeras-2d/AOT-F-negro-frente.webp"] }]
+      ["--color-green", { "imagenes": ["resources/Remeras-2d/AttackOnTitan/AOT-F-verde-reves.webp", "resources/Remeras-2d/AttackOnTitan/AOT-F-verde-frente.webp"] }],
+      ["--color-dark", { "imagenes": ["resources/Remeras-2d/AttackOnTitan/AOT-F-negro-reves.webp", "resources/Remeras-2d/AttackOnTitan/AOT-F-negro-frente.webp"] }]
     ],
     "precio_anterior": "10.000",
     "precio": "8.000",
@@ -33,8 +43,8 @@
   {
     "nombre": "Domain Expansion",
     "colores": [
-      ["--color-light", { "imagenes": ["resources/Remeras-2d/DE-blanco.webp"] }],
-      ["--color-dark", { "imagenes": ["resources/Remeras-2d/DE-negro.webp"] }]
+      ["--color-light", { "imagenes": ["resources/Remeras-2d/DomainExpansion/DE-blanco.webp"] }],
+      ["--color-dark", { "imagenes": ["resources/Remeras-2d/DomainExpansion/DE-negro.webp"] }]
     ],
     "precio_anterior": "10.000",
     "precio": "8.000",
@@ -44,9 +54,9 @@
   {
     "nombre": "No Pain - No Gain",
     "colores": [
-      ["--color-light", { "imagenes": ["resources/Remeras-2d/NPNG-blanco.webp", "resources/Remeras-2d/NPNG-blanco-hover.webp"] }],
-      ["--color-dark", { "imagenes": ["resources/Remeras-2d/NPNG-negro.webp", "resources/Remeras-2d/NPNG-negro-hover.webp"] }],
-      ["--color-green", { "imagenes": ["resources/Remeras-2d/NPNG-verde.webp", "resources/Remeras-2d/NPNG-verde-hover.webp"] }]
+      ["--color-light", { "imagenes": ["resources/Remeras-2d/NoPainNoGain/NPNG-blanco.webp", "resources/Remeras-2d/NoPainNoGain/NPNG-blanco-hover.webp"] }],
+      ["--color-dark", { "imagenes": ["resources/Remeras-2d/NoPainNoGain/NPNG-negro.webp", "resources/Remeras-2d/NoPainNoGain/NPNG-negro-hover.webp"] }],
+      ["--color-green", { "imagenes": ["resources/Remeras-2d/NoPainNoGain/NPNG-verde.webp", "resources/Remeras-2d/NoPainNoGain/NPNG-verde-hover.webp"] }]
     ],
     "precio_anterior": "10.000",
     "precio": "8.000",
@@ -56,8 +66,8 @@
   {
     "nombre": "Los Angeles",
     "colores": [
-      ["--color-light", { "imagenes": ["resources/Remeras-2d/LA-blanco.webp"] }],
-      ["--color-dark", { "imagenes": ["resources/Remeras-2d/LA-negro.webp"] }]
+      ["--color-light", { "imagenes": ["resources/Remeras-2d/LosAngeles/LA-blanco.webp"] }],
+      ["--color-dark", { "imagenes": ["resources/Remeras-2d/LosAngeles/LA-negro.webp"] }]
     ],
     "precio_anterior": "10.000",
     "precio": "8.000",
