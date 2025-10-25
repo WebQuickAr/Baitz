@@ -1039,6 +1039,13 @@ header{
   padding: 2px 0px;
 }
 
+.faq-answer-images-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
 .faq-answer-img{
   width: 90%;
   max-width: 400px;
@@ -1543,6 +1550,11 @@ header{
   /* ----- ----- FAQs ----- ----- */
   .faqs-section-container {
     gap: 50px;
+  }
+
+  .faq-answer-images-container{
+    flex-direction: row;
+    align-items: center;
   }
   
   /* ----- ----- PRODUCTOS ----- ----- */

@@ -202,9 +202,19 @@ function agregarTalles(container, producto) {
   guíaDeTallesTitle.classList.add('guia-talles-title');
   guíaDeTallesTitle.textContent = 'Ver guía de talles:';
 
+
   const guíaDeTalles = document.createElement('div');
   guíaDeTalles.classList.add('guia-talles-img-container');
-  guíaDeTalles.innerHTML = `<img class="talles-img" src="resources/guia-de-talles.webp" alt="Tabla de talles">`;
+  switch (producto.tipo) {
+    case "buzo":
+      guíaDeTalles.innerHTML = `<img class="talles-img" src="resources/guia-de-talles-buzos.webp" alt="Tabla de talles">`;
+      break;
+      
+      default:
+      guíaDeTalles.innerHTML = `<img class="talles-img" src="resources/guia-de-talles-remeras.webp" alt="Tabla de talles">`;
+      break;
+  }
+  
 
   guíaDeTallesContainer.appendChild(guíaDeTallesTitle);
   guíaDeTallesContainer.appendChild(guíaDeTalles);

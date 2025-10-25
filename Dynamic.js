@@ -78,7 +78,7 @@ function mostrarProductos(datos) {
       </a>
       <a class="products-section_product-name disparador">${item.nombre}</a>
       <div class="products-section_product-price-container">
-        <span class="product-price-container_old-price">$10.000</span>
+        <span class="product-price-container_old-price">$${item.precio_anterior}</span>
         <span class="product-price-container_division-price">|</span>
         <p class="product-price-container_new-price">$${item.precio}</p>
       </div>`
