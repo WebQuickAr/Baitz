@@ -46,8 +46,8 @@
     "colores": [
       ["--color-green", { "imagenes": ["resources/Remeras-2d/PlusUltra/PU-verde.webp"] }]
     ],
-    "precio_anterior": "10.000",
-    "precio": "8.000",
+    "precio_anterior": "12.500",
+    "precio": "10.000",
     "talles": ["S", "M", "L"],
     "tipo": "remera"
   },
@@ -57,8 +57,8 @@
       ["--color-green", { "imagenes": ["resources/Remeras-2d/AttackOnTitan/AOT-F-verde-reves.webp", "resources/Remeras-2d/AttackOnTitan/AOT-F-verde-frente.webp"] }],
       ["--color-dark", { "imagenes": ["resources/Remeras-2d/AttackOnTitan/AOT-F-negro-reves.webp", "resources/Remeras-2d/AttackOnTitan/AOT-F-negro-frente.webp"] }]
     ],
-    "precio_anterior": "10.000",
-    "precio": "8.000",
+    "precio_anterior": "12.500",
+    "precio": "10.000",
     "talles": ["S", "M", "L", "XL"],
     "tipo": "remera"
   },
@@ -68,8 +68,8 @@
       ["--color-light", { "imagenes": ["resources/Remeras-2d/DomainExpansion/DE-blanco.webp"] }],
       ["--color-dark", { "imagenes": ["resources/Remeras-2d/DomainExpansion/DE-negro.webp"] }]
     ],
-    "precio_anterior": "10.000",
-    "precio": "8.000",
+    "precio_anterior": "12.500",
+    "precio": "10.000",
     "talles": ["S", "M", "L"],
     "tipo": "remera"
   },
@@ -80,8 +80,8 @@
       ["--color-dark", { "imagenes": ["resources/Remeras-2d/NoPainNoGain/NPNG-negro.webp", "resources/Remeras-2d/NoPainNoGain/NPNG-negro-hover.webp"] }],
       ["--color-green", { "imagenes": ["resources/Remeras-2d/NoPainNoGain/NPNG-verde.webp", "resources/Remeras-2d/NoPainNoGain/NPNG-verde-hover.webp"] }]
     ],
-    "precio_anterior": "10.000",
-    "precio": "8.000",
+    "precio_anterior": "12.500",
+    "precio": "10.000",
     "talles": ["S", "M", "L"],
     "tipo": "remera"
   },
@@ -91,8 +91,8 @@
       ["--color-light", { "imagenes": ["resources/Remeras-2d/LosAngeles/LA-blanco.webp"] }],
       ["--color-dark", { "imagenes": ["resources/Remeras-2d/LosAngeles/LA-negro.webp"] }]
     ],
-    "precio_anterior": "10.000",
-    "precio": "8.000",
+    "precio_anterior": "12.500",
+    "precio": "10.000",
     "talles": ["S", "M", "L"],
     "tipo": "remera"
   }
