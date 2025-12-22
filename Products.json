@@ -1,5 +1,25 @@
 [
   {
+    "nombre": "Ultra Ego - Vegeta",
+    "colores": [
+      ["--color-dark", {"imagenes": ["resources/Remeras-2d/UltraEgo/UE-reves.webp","resources/Remeras-2d/UltraEgo/UE-frente.webp"]}]
+    ],
+    "precio_anterior": "12.500",
+    "precio": "10.000",
+    "talles": ["S","M", "L"]  ,
+    "tipo": "remera"
+  },
+  {
+    "nombre": "Ultra Instinct - Goku",
+    "colores": [
+      ["--color-dark", {"imagenes": ["resources/Remeras-2d/UltraInstinct/UI-reves.webp","resources/Remeras-2d/UltraInstinct/UI-frente.webp"]}]
+    ],
+    "precio_anterior": "12.500",
+    "precio": "10.000",
+    "talles": ["S","M", "L"]  ,
+    "tipo": "remera"
+  },
+  {
     "nombre": "Black Clover - Asta",
     "colores": [
       ["--color-light", { "imagenes": ["resources/Remeras-2d/BlackClover-Asta/BC-A-blanco-reves.webp","resources/Remeras-2d/BlackClover-Asta/BC-A-blanco-frente.webp"] }],
