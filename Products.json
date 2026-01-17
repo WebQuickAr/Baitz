@@ -7,7 +7,8 @@
     "precio_anterior": "12.500",
     "precio": "10.000",
     "talles": ["S","M", "L"]  ,
-    "tipo": "remera"
+    "tipo": "remera",
+    "stock": true
   },
   {
     "nombre": "Ultra Instinct - Goku",
@@ -17,7 +18,8 @@
     "precio_anterior": "12.500",
     "precio": "10.000",
     "talles": ["S","M", "L"]  ,
-    "tipo": "remera"
+    "tipo": "remera",
+    "stock": true
   },
   {
     "nombre": "Black Clover - Asta",
@@ -28,7 +30,8 @@
     "precio_anterior": "12.500",
     "precio": "10.000",
     "talles": ["S","M", "L"]  ,
-    "tipo": "remera"
+    "tipo": "remera",
+    "stock": true
   },
   {
     "nombre": "Chainsaw Man - Kon",
@@ -39,7 +42,8 @@
     "precio_anterior": "12.500",
     "precio": "10.000",
     "talles": ["S","M", "L"],
-    "tipo": "remera"
+    "tipo": "remera",
+    "stock": true
   },
   {
     "nombre": "Demon slayer - infinity castle",
@@ -49,7 +53,8 @@
     "precio_anterior": "12.500",
     "precio": "10.000",
     "talles": ["S","M", "L"],
-    "tipo": "remera"
+    "tipo": "remera",
+    "stock": true
   },
   {
     "nombre": "Viltrum Empire",
@@ -59,7 +64,8 @@
     "precio_anterior": "22.500",
     "precio": "18.000",
     "talles": ["M", "XL"],
-    "tipo": "buzo"
+    "tipo": "buzo",
+    "stock": false
   },
   {
     "nombre": "Plus Ultra",
@@ -69,7 +75,8 @@
     "precio_anterior": "12.500",
     "precio": "10.000",
     "talles": ["S", "M", "L"],
-    "tipo": "remera"
+    "tipo": "remera",
+    "stock": false
   },
   {
     "nombre": "AOT - Freedom",
@@ -80,7 +87,8 @@
     "precio_anterior": "12.500",
     "precio": "10.000",
     "talles": ["S", "M", "L", "XL"],
-    "tipo": "remera"
+    "tipo": "remera",
+    "stock": false
   },
   {
     "nombre": "Domain Expansion",
@@ -91,7 +99,8 @@
     "precio_anterior": "12.500",
     "precio": "10.000",
     "talles": ["S", "M", "L"],
-    "tipo": "remera"
+    "tipo": "remera",
+    "stock": false
   },
   {
     "nombre": "No Pain - No Gain",
@@ -103,7 +112,8 @@
     "precio_anterior": "12.500",
     "precio": "10.000",
     "talles": ["S", "M", "L"],
-    "tipo": "remera"
+    "tipo": "remera",
+    "stock": false
   },
   {
     "nombre": "Los Angeles",
@@ -114,6 +124,7 @@
     "precio_anterior": "12.500",
     "precio": "10.000",
     "talles": ["S", "M", "L"],
-    "tipo": "remera"
+    "tipo": "remera",
+    "stock": false
   }
 ]

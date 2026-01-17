@@ -23,17 +23,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function mostrarProductos(datos) {
   const contenedorProductos = document.getElementById('products');
-  contenedorProductos.innerHTML = ''; // Limpiar productos antes de mostrarlos
+  contenedorProductos.innerHTML = '';
 
   datos.forEach(item => {
     const itemDiv = document.createElement('div');
-    itemDiv.classList.add('products-section_product', 'disparador');
+    itemDiv.classList.add('products-section_product');
+
+    if (item.stock) {
+      itemDiv.classList.add('disparador');
+    } else {
+      itemDiv.classList.add('no-stock');
+    }
 
     // Crear contenedor de imagen
     const imgContainer = document.createElement('a');
-    imgContainer.classList.add('products-section_product-img-container', 'disparador');
+    imgContainer.classList.add('products-section_product-img-container');
     const imgElement = document.createElement('img');
-    imgElement.alt = item.nombre; // Asignar el nombre como texto alternativo
+    imgElement.alt = item.nombre;
     imgContainer.appendChild(imgElement);
     itemDiv.appendChild(imgContainer);
 
@@ -41,25 +47,24 @@ function mostrarProductos(datos) {
     const itemColorsDiv = document.createElement('div');
     itemColorsDiv.classList.add('products-section_product-colors-container');
 
-    let isFirstColor = true; // Bandera para identificar el primer color
+    let isFirstColor = true;
 
     for (const [colorPos, colorInfo] of Object.entries(item.colores)) {
       const colorSpan = document.createElement('span');
       colorSpan.classList.add('product-colors-container_color');
       colorSpan.style.backgroundColor = `var(${colorInfo[0]})`;
 
-      // Si es el primer color, agregar la clase 'selected'
       if (isFirstColor) {
         colorSpan.classList.add('selected');
         const imgElement = itemDiv.querySelector('.products-section_product-img-container img');
         if (imgElement) {
           imgElement.src = colorInfo[1].imagenes[0];
         }
-        isFirstColor = false; // Cambiar la bandera para evitar múltiples selecciones
+        isFirstColor = false;
       }
 
-      // Evento para cambiar la imagen
-      colorSpan.addEventListener('click', () => {
+      colorSpan.addEventListener('click', (e) => {
+        e.stopPropagation();
         const allSpans = itemDiv.querySelectorAll('.product-colors-container_color');
         allSpans.forEach(span => span.classList.remove('selected'));
         colorSpan.classList.add('selected');
@@ -73,35 +78,35 @@ function mostrarProductos(datos) {
 
     // Crear contenido del producto
     itemDiv.innerHTML = `
-      <a class="products-section_product-img-container disparador">
+      <a class="products-section_product-img-container">
         <img src="${item.colores[0][1].imagenes[0]}" alt="${item.nombre}">
       </a>
-      <a class="products-section_product-name disparador">${item.nombre}</a>
+      <a class="products-section_product-name">${item.nombre}</a>
       <div class="products-section_product-price-container">
         <span class="product-price-container_old-price">$${item.precio_anterior}</span>
         <span class="product-price-container_division-price">|</span>
         <p class="product-price-container_new-price">$${item.precio}</p>
-      </div>`
-    ;
+      </div>
+    `;
 
     itemDiv.appendChild(itemColorsDiv);
 
     const verProductoBtn = document.createElement('a');
     verProductoBtn.textContent = "VER PRODUCTO";
-    verProductoBtn.classList.add('products-section_product-btn', 'disparador');
+    verProductoBtn.classList.add('products-section_product-btn');
     itemDiv.appendChild(verProductoBtn);
 
     contenedorProductos.appendChild(itemDiv);
 
-    // Evento para guardar el producto y redirigir
-    itemDiv.querySelectorAll('.disparador').forEach(elemento => {
-      elemento.addEventListener('click', () => {
+    if (item.stock) {
+      itemDiv.addEventListener('click', () => {
         localStorage.setItem('productoSeleccionado', JSON.stringify(item));
         window.location.href = 'card-product.html';
       });
-    });
+    }
   });
 }
+
 
 function sortItems(data) {
   const orderSelect = document.getElementById('orderSelect');

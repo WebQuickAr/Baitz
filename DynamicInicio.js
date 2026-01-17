@@ -63,13 +63,19 @@ function mostrarProductos(datos, prioridadesUltimosLanzamientos, prioridadesNues
     if (!colorPreferido) return;
 
     const itemDiv = document.createElement('div');
-    itemDiv.classList.add('products-section_product', 'disparador');
+    itemDiv.classList.add('products-section_product');
+
+    if (producto.stock) {
+      itemDiv.classList.add('disparador');
+    } else {
+      itemDiv.classList.add('no-stock');
+    }
 
     itemDiv.innerHTML = `
-      <div class="products-section_product-img-container disparador">
+      <div class="products-section_product-img-container">
         <img src="${colorPreferido[1].imagenes[0]}" alt="${producto.nombre}">
       </div>
-      <a class="products-section_product-name disparador">${producto.nombre}</a>
+      <a class="products-section_product-name">${producto.nombre}</a>
       <div class="products-section_product-price-container">
         <span class="product-price-container_old-price">$${producto.precio_anterior}</span>
         <span class="product-price-container_division-price">|</span>
@@ -90,8 +96,9 @@ function mostrarProductos(datos, prioridadesUltimosLanzamientos, prioridadesNues
       }
 
       colorSpan.addEventListener('click', (event) => {
-        event.stopPropagation(); // Evita activar el evento de la clase disparador
-        itemColorsDiv.querySelectorAll('.product-colors-container_color').forEach(span => span.classList.remove('selected'));
+        event.stopPropagation();
+        itemColorsDiv.querySelectorAll('.product-colors-container_color')
+          .forEach(span => span.classList.remove('selected'));
         colorSpan.classList.add('selected');
         itemDiv.querySelector('img').src = colorInfo[1].imagenes[0];
       });
@@ -103,18 +110,15 @@ function mostrarProductos(datos, prioridadesUltimosLanzamientos, prioridadesNues
 
     const verProductoBtn = document.createElement('a');
     verProductoBtn.textContent = "VER PRODUCTO";
-    verProductoBtn.classList.add('products-section_product-btn', 'disparador');
-    verProductoBtn.addEventListener('click', () => {
-      localStorage.setItem('productoSeleccionado', JSON.stringify(producto));
-      window.location.href = 'card-product.html';
-    });
-
+    verProductoBtn.classList.add('products-section_product-btn');
     itemDiv.appendChild(verProductoBtn);
 
-    itemDiv.addEventListener('click', () => {
-      localStorage.setItem('productoSeleccionado', JSON.stringify(producto));
-      window.location.href = 'card-product.html';
-    });
+    if (producto.stock) {
+      itemDiv.addEventListener('click', () => {
+        localStorage.setItem('productoSeleccionado', JSON.stringify(producto));
+        window.location.href = 'card-product.html';
+      });
+    }
 
     productosFragment.appendChild(itemDiv);
   });
