@@ -1,6 +1,6 @@
-# 🛍️ Baitz — Sitio Web E-commerce
+# 🛍️ Baitz — Sitio Web catalogo de ropa online
 
-Sitio web E-commerce desarrollado como proyecto **freelance** para un cliente real.  
+Sitio web de Catalogo de ropa online desarrollado como proyecto **freelance** para un cliente real.  
 El objetivo fue crear una presencia online clara, atractiva y orientada a la experiencia de usuario.
 
 Proyecto enfocado en una experiencia visual atractiva y navegación fluida para usuarios finales.
