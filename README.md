@@ -8,7 +8,7 @@ Proyecto enfocado en una experiencia visual atractiva y navegación fluida para 
 ---
 
 ## 🌐 Demo
-🔗 https://baitz.netlify.app/inicio
+🔗 https://baitz.netlify.app/
 
 ---
 
