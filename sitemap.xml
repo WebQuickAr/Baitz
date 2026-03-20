@@ -2,19 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://tusitio.com/</loc>
+    <loc>https://baitz.netlify.app/</loc>
   </url>
 
   <url>
-    <loc>https://tusitio.com/productos</loc>
+    <loc>https://baitz.netlify.app/productos</loc>
   </url>
 
   <url>
-    <loc>https://tusitio.com/contacto</loc>
+    <loc>https://baitz.netlify.app/contacto</loc>
   </url>
   
   <url>
-    <loc>https://tusitio.com/preguntas-frecuentes</loc>
+    <loc>https://baitz.netlify.app/preguntas-frecuentes</loc>
   </url>
 
 </urlset>
