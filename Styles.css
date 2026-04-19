@@ -543,13 +543,12 @@ header{
 .products-section_product-img-container{
   position: relative;
 
-  width: 100%;
+  width: 100%;;
   height: fit-content;
   min-height: 200px;
   margin-bottom: 10px;
 
   overflow: hidden;
-  aspect-ratio: 1/1;
 }
 
 .products-section_product-img-container::before{
@@ -571,6 +570,7 @@ header{
   height: 100%;
 
   object-fit: cover;
+  aspect-ratio: 1/1;
 }
 
 .products-section_product-name{
