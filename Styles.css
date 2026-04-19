@@ -536,8 +536,21 @@ header{
   filter: blur(1.5px);
 }
 
+.no-stock > .products-section_product-btn{
+  text-decoration: line-through;
+  background-color: var(--color-extra-original);
+}
+
+.no-stock > .products-section_product-btn:hover{
+  background-color: var(--color-extra-original);
+}
+
 .products-section_product > *{
   cursor: pointer;
+}
+
+.no-stock > *{
+  cursor: default;
 }
 
 .products-section_product-img-container{
